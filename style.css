@@ -3,10 +3,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.wrapper {
+    width: 80%;
+    /* border: 3px solid red; */
+    margin: 0 auto;
+}
+
 h1 {
     color: white;
     text-align: center;
-    margin: 0;
+    padding-top: 1rem;
 }
 
 p {
@@ -16,15 +22,16 @@ p {
 
 section {
     border: 1px solid gray;
-    padding: 20px;margin: 30px;
+    padding: 20px;
+    margin: 30px 0;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 img {
     width: 300px;
     border-radius: 5px;
-    margin: 20px 0;
 }
 
 .container {
@@ -32,9 +39,8 @@ img {
 }
 
 header {
-    margin-left: 30px;
     background-color: #003366;
-    padding: 30px;
+    border-radius: 5px;
 }
 
 nav {
@@ -45,8 +51,18 @@ nav {
 
 header a {
     color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 1s ease; 
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 header a:hover {
-    color: chartreuse;
+    color: darkblue;
+    font-weight: bold;
+    background-color:lightgreen;    
+}
+
+h1, img, a{
+    margin-bottom: 1rem;
 }
